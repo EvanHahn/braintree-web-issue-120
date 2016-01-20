@@ -1,1 +1,25 @@
-hello world
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>muhammad-ammar's Require.js issue</title>
+<style>
+
+  body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+</style>
+
+<script type="text/javascript" data-main="{% static 'checkout/js/main' %}" src="{% static 'checkout/js/vendor/require.js' %}"></script>
+
+</head>
+<body>
+
+  <h1>Loading Braintree...</h1>
+
+</body>
+</html>

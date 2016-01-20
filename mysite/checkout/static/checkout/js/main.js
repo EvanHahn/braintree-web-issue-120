@@ -1,12 +1,12 @@
 require.config({
     waitSeconds: 60,
     paths: {
-        "jquery": "js/vendor/jquery",
-        "underscore": "js/vendor/underscore",
-        "backbone": "js/vendor/backbone",
-        "babysitter" : "js/vendor/backbone.babysitter",
-        "wreqr" : "js/vendor/backbone.wreqr",
-        "marionette": "js/vendor/backbone.marionette.min",
+        "jquery": "vendor/jquery",
+        "underscore": "vendor/underscore",
+        "backbone": "vendor/backbone",
+        "babysitter" : "vendor/backbone.babysitter",
+        "wreqr" : "vendor/backbone.wreqr",
+        "marionette": "vendor/backbone.marionette.min",
         "braintree": "https://js.braintreegateway.com/v2/braintree",
     },
     shim: {
@@ -24,6 +24,7 @@ require.config({
         deps: [ 'jquery', 'underscore']
     }
 });
+
 
 define([
     'jquery',
